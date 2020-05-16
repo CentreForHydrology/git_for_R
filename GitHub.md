@@ -80,22 +80,55 @@ the terminal tab in Rstudio
 drop-down menu  
 ![](figures/git_shell.png)
 
-
-
 Configuring git
 ========================================================
-- The first step is to tell git who you are:
+- The first step is to tell git who you are:  
 
 ```
-$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
 ```
 
-You can list your current settings with the command
+- You can list your current settings with the command  
 
 ```
-$ git config --list
+git config --list
 ```
+
+Version control
+=======================================================
+- As you create code, you will want to add it to the repository
+  - generally each time you have made a significant change to
+  any file
+- Adding takes 2 steps:
+1. Staging (selecting the files to add), and
+2. Committing (adding the files to the repository)
+
+
+Files available for staging
+=========================================================
+- The Git tab shows all of the files which can be staged
+- 2 files have been modified (blue M icon), 
+- 1 file is new (yellow ? icon) 
+
+<div align="center">
+<img src="figures/staging.png" width=600 height=300>
+</div>
+
+Committing
+========================================================
+- Select the files to be added
+  - the icons of the new files will change)
+  - and click on the commit icon
+  
+- The commit window will pop-up, giving you a chance
+to review the files before committing
+
+Commit window
+=====================================================
+<div align="center">
+<img src="figures/commit.png">
+</div>
 
 ssh
 =======================================================
