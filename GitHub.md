@@ -23,8 +23,6 @@ are always changes
 - Version control programs allow you to manage the versions
 of the files that you create.
 
-
-
 git
 ========================================================
 - Most popular version control program
@@ -129,6 +127,16 @@ Commit window
 <div align="center">
 <img src="figures/commit.png">
 </div>
+
+Committing
+=====================================================
+- The bottom pane (Diff) shows the changes in all of the files
+  - you can select or discard changes
+- You **must** add a comment in the top-right panel 
+before clicking on Commit
+- 
+
+
 
 ssh
 =======================================================

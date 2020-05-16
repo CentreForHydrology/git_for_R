@@ -23,8 +23,6 @@ are always changes
 - Version control programs allow you to manage the versions
 of the files that you create.
 
-
-
 git
 ========================================================
 - Most popular version control program
@@ -114,6 +112,30 @@ Files available for staging
 <div align="center">
 <img src="figures/staging.png" width=600 height=300>
 </div>
+
+Committing
+========================================================
+- Select the files to be added
+  - the icons of the new files will change)
+  - and click on the commit icon
+  
+- The commit window will pop-up, giving you a chance
+to review the files before committing
+
+Commit window
+=====================================================
+<div align="center">
+<img src="figures/commit.png">
+</div>
+
+Committing
+=====================================================
+- The bottom pane (Diff) shows the changes in all of the files
+  - you can select or discard changes
+- You **must** add a comment in the top-right panel 
+before clicking on Commit
+- 
+
 
 
 ssh
