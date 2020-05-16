@@ -1,0 +1,25 @@
+---
+title: "Exercises for git/GitHub"
+output: html_notebook
+---
+
+Try the following exercises.
+
+1. Install git on your computer
+Linux
+On Debian-based Linux distros (Ubuntu, Mint) the command is  
+`sudo apt install git`
+On RedHat (CentOS, Fedora), it is
+`sudo yum install git`
+On Arch it is
+`sudo pacman -S git`
+
+Windows
+
+
+2. Go to GitHub and create an account
+
+3. Clone the presentation repository to your GitHub account
+
+4. Clone the presentation from **your** GitHub account to your local
+computer
