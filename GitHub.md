@@ -134,7 +134,21 @@ Committing
   - you can select or discard changes
 - You **must** add a comment in the top-right panel 
 before clicking on Commit
-- 
+
+Pushing and pulling
+=====================================================
+- It's a good idea to click on Pull to make sure that
+the local repo is up to date
+
+<div align="left">
+<img src="figures/pull.png" width=300>
+</div>
+***
+- Click on Push to upload the current local repo to GitHub  
+
+<div align="center">
+<img src="figures/push.png" width=600>
+</div>
 
 
 
