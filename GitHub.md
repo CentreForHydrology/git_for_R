@@ -163,7 +163,17 @@ directory are updated
 
 Recovering from a mistake
 ======================================================
-- You can 
+- The easiest (and most desructive) way to abandon the last
+commit is to use the command  
+
+` git reset --hard <last good commit SHA>
+
+Example:
+
+```
+git reset --hard 941b27f8
+HEAD is now at 941b27f good commit before mistake
+```
 
 
 
