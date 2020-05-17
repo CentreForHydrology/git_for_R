@@ -176,7 +176,6 @@ HEAD is now at 941b27f good commit before mistake
 ```
 
 
-
 Working with GitHub
 ====================================================
 
