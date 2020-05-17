@@ -134,59 +134,6 @@ Commit window
 <img src="figures/commit.png">
 </div>
 
-Committing
-=====================================================
-- The bottom pane (Diff) shows the changes in all of the files
-  - you can select or discard changes
-- You **must** add a comment in the top-right panel 
-before clicking on Commit
-
-Git history
-===========================================================
-- In the Commit window, clicking on the History button shows the history of all
-of your commits to the repository  
-<div align="center">
-<img src="figures/history.png" width = 800>
-</div>
-- Each commit is identified by a unique SHA number
-
-Branches
-======================================================
-- git uses *branches* to organise your code/documents
-- Each repository always has a brance called **master**
-  - most up-to-date, best version of the code 
-- Each branch is separate, and can be changed/deleted
-- The current branch is shown in the Git tab
-- You can add branches at any time
-- When you change the branch, the files in the working 
-directory are updated
-
-Recovering from a mistake
-======================================================
-- You can 
-
-
-
-Working with GitHub
-====================================================
-
-
-Pushing and pulling
-=====================================================
-- It's a good idea to click on Pull to make sure that
-the local repo is up to date
-
-<div align="left">
-<img src="figures/pull.png" width=300>
-</div>
-***
-- Click on Push to upload the current local repo to GitHub  
-
-<div align="center">
-<img src="figures/push.png" width=600>
-</div>
-
-
 
 
 
