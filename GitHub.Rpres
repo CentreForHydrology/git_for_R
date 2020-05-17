@@ -1,7 +1,7 @@
-GitHub
+Using Git and GitHub with R
 ========================================================
 author: Kevin Shook and Rob Chlumsky
-date:
+date: June 3, 2020
 autosize: true
 
 Outline
@@ -12,11 +12,16 @@ Outline
 - Using git in R
 - Working with GitHub
 
+========================================================
+<div align="center">
+<img src="figures/phd101212s.gif" width=500>
+
+
 Version control programs
 ========================================================
 - When you create R files (code, notebooks, documents), there
 are always changes
-- Changes often damage the files
+- Changes sometimes damage the files
   - need to go back to older versions
 - Need to add new features without damaging current version
 - Especially true when working with other people
@@ -48,7 +53,7 @@ How git works
 - A folder called **.git** is created in the directory holding
 your your project, the working directory
 - This is the repository
-  - It contains all old versions of your files
+  - It contains all versions, current and old, of your files
 - When you make changes to the files, you add them to the repository
 - You can retrieve old versions of the files into the working
 directory
@@ -57,7 +62,7 @@ git and Rstudio
 =======================================================
 - When you clone a repository from GitHub, a local repository
 is automatically created
-- You can also set up git for a local project under
+- You can also set up git for a local project in Rstudio using the menu    
 Tools | Project Options ...
 
 Working with git
@@ -77,6 +82,7 @@ the terminal tab in Rstudio
 - In Windows, you have to use the git shell, which is accessed through a 
 drop-down menu  
 ![](figures/git_shell.png)
+- git commands always begin with **git**
 
 Configuring git
 ========================================================
@@ -135,6 +141,36 @@ Committing
 - You **must** add a comment in the top-right panel 
 before clicking on Commit
 
+Git history
+===========================================================
+- In the Commit window, clicking on the History button shows the history of all
+of your commits to the repository  
+<div align="center">
+<img src="figures/history.png" width = 800>
+</div>
+- Each commit is identified by a unique SHA number
+
+Branches
+======================================================
+- git uses *branches* to organise your code/documents
+- Each repository always has a brance called **master**
+  - most up-to-date, best version of the code 
+- Each branch is separate, and can be changed/deleted
+- The current branch is shown in the Git tab
+- You can add branches at any time
+- When you change the branch, the files in the working 
+directory are updated
+
+Recovering from a mistake
+======================================================
+- You can 
+
+
+
+Working with GitHub
+====================================================
+
+
 Pushing and pulling
 =====================================================
 - It's a good idea to click on Pull to make sure that
@@ -149,6 +185,8 @@ the local repo is up to date
 <div align="center">
 <img src="figures/push.png" width=600>
 </div>
+
+
 
 
 
