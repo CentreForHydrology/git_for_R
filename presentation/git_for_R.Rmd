@@ -14,20 +14,21 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Outline
-========================================================
+# Outline
+
 - Version control
 - What are git and GitHub?
 - How to set up
 - Using git in R
 - Working with GitHub
 
-Why version control?
-========================================================
-![](figures/phd101212s.png)
+---
+```{r, echo=FALSE, fig.width=4}
+knitr::include_graphics("figures/phd101212s.png")
+```  
+#![www.phdcomics.com](figures/phd101212s.png)
 
-Version control programs
-========================================================
+# Version control programs
 - When you create R files (code, notebooks, documents), there
 are always changes
 - Changes sometimes damage the files
@@ -37,28 +38,24 @@ are always changes
 - Version control programs allow you to manage the versions
 of the files that you create.
 
-git
-========================================================
+# git
 - Most popular version control program
 - Written by Linus Torvalds, creator of Linux
 - Free Open Source Software (FOSS)
 - *Distributed* version control
   - doesn't require a centralised server like SVN
 
-GitHub
-========================================================
+# GitHub
 - Website running git
 - Allows you to backup your git repository
 - Also allows collaboration with others
 - There are other similar sites like GitLab: https://about.gitlab.com/
 
-Getting git
-========================================================
+# Getting git
 - Built into Linux
 - For MacOS or Windows, you can download git from https://git-scm.com/
 
-How git works
-=======================================================
+# How git works
 - A folder called **.git** is created in the directory holding
 your your project, the working directory
 - This is the repository
@@ -67,15 +64,13 @@ your your project, the working directory
 - You can retrieve old versions of the files into the working
 directory
 
-git and Rstudio
-=======================================================
+# git and Rstudio
 - When you clone a repository from GitHub, a local repository
 is automatically created
 - You can also set up git for a local project in Rstudio using the menu    
 Tools | Project Options ...
 
-Working with git
-=======================================================
+# Working with git
 - git is a command-based program
 - There are many GUIs for git, including Rstudio
   - makes working with git much easier
@@ -83,8 +78,7 @@ Working with git
 ![](figures/git_tab.png)  
   - you will still have to type commands occasionally
 
-Typing in commands
-=======================================================
+# Typing in commands
 - In Linux or Mac OS, you can type in git commands in any terminal, including
 the terminal tab in Rstudio  
 ![](figures/git_tab.png)  
@@ -93,9 +87,9 @@ drop-down menu
 ![](figures/git_shell.png)
 - git commands always begin with **git**
 
-Configuring git
-========================================================
-- The first step is to tell git who you are:  
+# Configuring git
+
+The first step is to tell git who you are:  
 
 ```
 git config --global user.name "John Doe"
@@ -108,8 +102,7 @@ git config --global user.email johndoe@example.com
 git config --list
 ```
 
-Version control
-=======================================================
+# Version control
 - As you create code, you will want to add it to the repository
   - generally each time you have made a significant change to
   any file
@@ -118,36 +111,33 @@ Version control
 2. Committing (adding the files to the repository)
 
 
-Files available for staging
-=========================================================
-- The Git tab shows all of the files which can be staged
+# Files available for staging
+The Git tab shows all of the files which can be staged
 - 2 files have been modified (blue M icon), 
 - 1 file is new (yellow ? icon) 
 
 ![](figures/staging.png)
 
-Committing
-========================================================
-- Select the files to be added
+# Committing  
+Select the files to be added  
   - the icons of the new files will change)
   - and click on the commit icon
   
 - The commit window will pop-up, giving you a chance
 to review the files before committing
 
-Commit window
-=====================================================
+# Commit window
 ![](figures/commit.png)
 
-Committing
-=====================================================
+# Commit window
+
 - The bottom pane (Diff) shows the changes in all of the files
   - you can select or discard changes
 - You **must** add a comment in the top-right panel 
 before clicking on Commit
 
-Git history
-===========================================================
+# Git history
+
 - In the Commit window, clicking on the History button shows the history of all
 of your commits to the repository 
 
@@ -155,8 +145,8 @@ of your commits to the repository
 
 - Each commit is identified by a unique SHA number
 
-Branches
-======================================================
+# Branches
+
 - git uses *branches* to organise your code/documents
 - Each repository always has a brance called **master**
   - most up-to-date, best version of the code 
@@ -166,8 +156,7 @@ Branches
 - When you change the branch, the files in the working 
 directory are updated
 
-Creating branches
-=====================================================
+# Creating branches
 - You can create a new branch at any time
   - Use the branch icon in RStudio: ![](figures/branch_icon.png) 
   to display the dialog box
@@ -176,17 +165,16 @@ Creating branches
 
 - Current versions of all files are added to the new branch
 
-Changing between branches
-======================================================
+# Changing between branches
 - You can switch between branches by selecting the branch name
 
 ![](figures/switch_branches.png)
 
-Recovering from mistakes
-======================================================
+# Recovering from mistakes
+
 There are *lots* of ways of screwing up your code!  
  - Accidentally deleting files  
- - Accidentally deleting many lines  
+ - Accidentally deleting many lines in a file (and saving)  
  - Overwriting files
    
 This is why it's a good idea to make a branch *before* making
@@ -195,13 +183,13 @@ big changes to your project
 sethrobertson.github.io/GitFixUm shows how to recover from many different types of 
 mistakes
 
-Working with GitHub
-====================================================
-- The GitHub/GitLab repository linked to your local repot 
+# Working with GitHub
+
+- The GitHub/GitLab repository linked to your local repo
 is referred to as the "Remote"
 
-Pulling
-=====================================================
+# Pulling
+
 - Pulling downloads the GitHub repo to your local repo
 - It's a good idea to click on Pull to make sure that
 the local repo is up to date before doing any new work
@@ -209,15 +197,15 @@ the local repo is up to date before doing any new work
 ![](figures/pull.png)
 
 
-Pushing
-======================================================
+# Pushing
+
 - Pushing uploads your local repository to GitHub 
   - You should only push to your *own* GitHub repository
 
 ![](figures/push.png)
 
-Working with others
-=======================================================
+# Working with others
+
 - The most important feature of GitHub is the way it enables people
 to work together on projects
 - Each project will typically have an owner, and one or more people
@@ -225,7 +213,7 @@ who can approve changes
 - If you aren't one of these people (and even if you are!), you
 shouldn't be pushing changes to the **master** branch directly.
 
-Bug reports
+Bug reports (Issues)
 ========================================================
 - One of GitHub's most important features.
 - Very easy to submit an Issue  
@@ -233,8 +221,8 @@ Bug reports
 
 - Writing a *good* bug report is an art - see https://github.com/rstudio/rstudio/wiki/Writing-Good-Bug-Reports
 
-Forking
-=========================================================
+# Forking
+
 A *fork* is complete copy of a GitHub repo  
 - It lets you copy other work to use as a basis for your own  
 - It also lets you make a working copy the repo files, without affecting
@@ -249,8 +237,8 @@ Pull requests
 
 
 
-ssh
-=======================================================
+# ssh
+
 - ssh is short for "secure shell"
 - provides secure, encrypted communication between 2 computers
 - if you set it up on your computer, you can avoid having to
