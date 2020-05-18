@@ -184,7 +184,8 @@ Recovering from a mistake
 ======================================================
 - There are lots of ways of screwing up your code
   - you might need to undo a commit  
-  
+- Fortunately, you can recover old commits
+
 This web site is very useful as it shows many different situations
 and how to recover from them:
 

@@ -1,8 +1,18 @@
-Using Git and GitHub with R
-========================================================
-author: Kevin Shook and Rob Chlumsky
-date: June 3, 2020
-autosize: true
+---
+title: "Using Git and GitHub with R"
+author: "Kevin Shook and Rob Chlumsky"
+date: "June 3, 2020"
+header-includes:  
+- \titlegraphic{\centering \includegraphics[width=5cm]{cshslogo2019.png}}
+output: 
+    beamer_presentation:
+     theme: "default"
+     colortheme: "whale"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
 
 Outline
 ========================================================
@@ -12,9 +22,9 @@ Outline
 - Using git in R
 - Working with GitHub
 
+Why version control?
 ========================================================
-<div align="center">
-<img src="figures/phd101212s.gif" width=500>
+![](figures/phd101212s.png)
 
 
 Version control programs
@@ -115,9 +125,7 @@ Files available for staging
 - 2 files have been modified (blue M icon), 
 - 1 file is new (yellow ? icon) 
 
-<div align="center">
-<img src="figures/staging.png" width=600 height=300>
-</div>
+![](figures/staging.png)
 
 Committing
 ========================================================
@@ -130,9 +138,7 @@ to review the files before committing
 
 Commit window
 =====================================================
-<div align="center">
-<img src="figures/commit.png">
-</div>
+![](figures/commit.png)
 
 Committing
 =====================================================
@@ -144,10 +150,10 @@ before clicking on Commit
 Git history
 ===========================================================
 - In the Commit window, clicking on the History button shows the history of all
-of your commits to the repository  
-<div align="center">
-<img src="figures/history.png" width = 800>
-</div>
+of your commits to the repository 
+
+![](figures/history.png)  
+
 - Each commit is identified by a unique SHA number
 
 Branches
@@ -166,19 +172,16 @@ Creating branches
 - You can create a new branch at any time
   - Use the branch icon in RStudio: ![](figures/branch_icon.png) 
   to display the dialog box
-<div align="center">
-<img src="figures/branch_dialog.png" width = 600>
-</div>  
+
+![](figures/branch_dialog.png)
+
 - Current versions of all files are added to the new branch
 
 Changing between branches
 ======================================================
 - You can switch between branches by selecting the branch name
 
-<div align="center">
-<img src="figures/switch_branches.png" width = 600>
-</div>
-
+![](figures/switch_branches.png)
 
 Recovering from a mistake
 ======================================================
@@ -203,18 +206,15 @@ Pulling
 - It's a good idea to click on Pull to make sure that
 the local repo is up to date before doing any new work
 
-<div align="left">
-<img src="figures/pull.png" width=600>
-</div>
+![](figures/pull.png)
+
 
 Pushing
 ======================================================
 - Pushing uploads your local repository to GitHub 
   - You should only push to your *own* GitHub repository
 
-<div align="left">
-<img src="figures/push.png" width=1000>
-</div>
+![](figures/push.png)
 
 Working with others
 =======================================================
@@ -228,16 +228,15 @@ shouldn't be pushing changes to the **master** branch directly.
 Bug reports
 ========================================================
 - One of GitHub's most important features.
-- Very easy to submit an Issue
-<div align="left">
-<img src="figures/Issues.png" width=800>
-</div>
+- Very easy to submit an Issue  
+![](figures/Issues.png)
+
 - Writing a *good* bug report is an art - see https://github.com/rstudio/rstudio/wiki/Writing-Good-Bug-Reports
 
 Forking
 =========================================================
-A *fork* is complete copy of a GitHub repo
-- It lets you copy other work to use as a basis for your own
+A *fork* is complete copy of a GitHub repo  
+- It lets you copy other work to use as a basis for your own  
 - It also lets you make a working copy the repo files, without affecting
 the original repo
   - A good way to create new features or fix bugs
