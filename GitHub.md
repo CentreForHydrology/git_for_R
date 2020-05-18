@@ -161,38 +161,90 @@ Branches
 - When you change the branch, the files in the working 
 directory are updated
 
+Creating branches
+=====================================================
+- You can create a new branch at any time
+  - Use the branch icon in RStudio: ![](figures/branch_icon.png) 
+  to display the dialog box
+<div align="center">
+<img src="figures/branch_dialog.png" width = 600>
+</div>  
+- Current versions of all files are added to the new branch
+
+Changing between branches
+======================================================
+- You can switch between branches by selecting the branch name
+
+<div align="center">
+<img src="figures/switch_branches.png" width = 600>
+</div>
+
+
 Recovering from a mistake
 ======================================================
-- The easiest (and most desructive) way to abandon the last
-commit is to use the command  
+- There are lots of ways of screwing up your code
+  - you might need to undo a commit  
+  
+This web site is very useful as it shows many different situations
+and how to recover from them:
 
-` git reset --hard <last good commit SHA>
-
-Example:
-
-```
-git reset --hard 941b27f8
-HEAD is now at 941b27f good commit before mistake
-```
+https://sethrobertson.github.io/GitFixUm/fixup.html#committed
 
 
 Working with GitHub
 ====================================================
+- The GitHub/GitLab repository linked to your local repot 
+is referred to as the "Remote"
 
-
-Pushing and pulling
+Pulling
 =====================================================
+- Pulling downloads the GitHub repo to your local repo
 - It's a good idea to click on Pull to make sure that
-the local repo is up to date
+the local repo is up to date before doing any new work
 
 <div align="left">
-<img src="figures/pull.png" width=300>
+<img src="figures/pull.png" width=600>
 </div>
-***
 
-<div align="center">
-<img src="figures/push.png" width=600>
+Pushing
+======================================================
+- Pushing uploads your local repository to GitHub 
+  - You should only push to your *own* GitHub repository
+
+<div align="left">
+<img src="figures/push.png" width=1000>
 </div>
+
+Working with others
+=======================================================
+- The most important feature of GitHub is the way it enables people
+to work together on projects
+- Each project will typically have an owner, and one or more people
+who can approve changes
+- If you aren't one of these people (and even if you are!), you
+shouldn't be pushing changes to the **master** branch directly.
+
+Bug reports
+========================================================
+- One of GitHub's most important features.
+- Very easy to submit an Issue
+<div align="left">
+<img src="figures/Issues.png" width=800>
+</div>
+- Writing a *good* bug report is an art - see https://github.com/rstudio/rstudio/wiki/Writing-Good-Bug-Reports
+
+Forking
+=========================================================
+A *fork* is complete copy of a GitHub repo
+- It lets you copy other work to use as a basis for your own
+- It also lets you make a working copy the repo files, without affecting
+the original repo
+  - A good way to create new features or fix bugs
+  - When you are finished, you can then submit a Pull Request
+
+Pull requests
+=======================================================
+
 
 
 
