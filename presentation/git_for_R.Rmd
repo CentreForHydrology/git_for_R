@@ -26,7 +26,6 @@ Why version control?
 ========================================================
 ![](figures/phd101212s.png)
 
-
 Version control programs
 ========================================================
 - When you create R files (code, notebooks, documents), there
@@ -183,17 +182,18 @@ Changing between branches
 
 ![](figures/switch_branches.png)
 
-Recovering from a mistake
+Recovering from mistakes
 ======================================================
-- There are lots of ways of screwing up your code
-  - you might need to undo a commit  
-- Fortunately, you can recover old commits
+There are *lots* of ways of screwing up your code!  
+ - Accidentally deleting files  
+ - Accidentally deleting many lines  
+ - Overwriting files
+   
+This is why it's a good idea to make a branch *before* making
+big changes to your project
 
-This web site is very useful as it shows many different situations
-and how to recover from them:
-
-https://sethrobertson.github.io/GitFixUm/fixup.html#committed
-
+sethrobertson.github.io/GitFixUm shows how to recover from many different types of 
+mistakes
 
 Working with GitHub
 ====================================================
