@@ -30,8 +30,8 @@ to your account.
 
 8. Create a branch called `testing` for the CSHShydRology repo on your computer (and on your fork on GitHub)
 
-9. Copy the file `` from the `/exercises` folder of the presentation repository, to the `/code` directory of the `testing` branch.
+9. Copy the file `??` from the `/exercises` folder of the presentation repository, to the `/code` directory of the `testing` branch.
 
 10. Commit the changes to the local repo and push the commit to GitHub.
 
-11. Check the current branch - does it build properly? If not, change back to the `master` branch and build it.
+11. Check the `testing` branch. Does the package build properly? If not, change back to the `master` branch and build the package.
