@@ -6,7 +6,7 @@ header-includes:
 - \titlegraphic{\centering \includegraphics[width=5cm]{cshslogo2019.png}}
 output: 
     beamer_presentation:
-     theme: "default"
+     theme: "Boadilla"
      colortheme: "whale"
 ---
 
@@ -23,10 +23,9 @@ knitr::opts_chunk$set(echo = FALSE)
 - Working with GitHub
 
 ---
-```{r, echo=FALSE, fig.width=4}
+```{r, echo=FALSE, fig.width=3}
 knitr::include_graphics("figures/phd101212s.png")
 ```  
-#![www.phdcomics.com](figures/phd101212s.png)
 
 # Version control programs
 - When you create R files (code, notebooks, documents), there
@@ -65,21 +64,14 @@ your your project, the working directory
 directory
 
 # git and Rstudio
-::: columns
-:::: column
-- When you clone a repository from GitHub, a local repository
+- When you clone a repository from GitHub through GitHub, a local repository
 is automatically created 
+
 ```{r, echo=FALSE, fig.height = 1, fig.width=2}
-knitr::include_graphics("figures/clone_repository.png")
+ knitr::include_graphics("figures/clone_repository.png") 
 ```
-::::
-:::: column
-- When you create a project, you can also add a repository  
-```{r, echo=FALSE, fig.height = 1, fig.width=2}
-knitr::include_graphics("figures/new_project.png")
-```
-::::
-:::
+- When you manually create a project in Rstudio, you can also add a repository  
+
 
 # Working with git
 - git is a command-based program
@@ -246,10 +238,8 @@ the original repo
    - tell members of the project about your suggested changes
    - allows discussion
  - Files can then be merged with the specified branch
-  
 
 # ssh
-
 - ssh is short for "secure shell"
 - provides secure, encrypted communication between 2 computers
 - if you set it up on your computer, you can avoid having to
@@ -257,5 +247,7 @@ type in your user name and password every time
 - part of Linux and Mac OS
 - to add to Windows
 https://jcutrer.com/windows/install-openssh-on-windows10
-
+- Once installed, you have to configure it to create a key and set up
+your GitHub account to use the key
+https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
 
