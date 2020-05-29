@@ -30,7 +30,7 @@ knitr::include_graphics("figures/phd101212s.png")
 # Purpose of this webinar...
 ... is to get you comfortable *using* git and Github for your R projects, and enable you to collaborate on projects such as CSHS-hydRology.
 
-Is it *not* to make you an expert in version control software.
+It is *not* to make you an expert in version control software.
 
 # Version control programs
 - When you create R files (code, notebooks, documents), there
@@ -251,11 +251,12 @@ the original repo
 - if you set it up on your computer, you can avoid having to
 type in your user name and password every time
 - part of Linux and Mac OS
-- to add to Windows
-https://jcutrer.com/windows/install-openssh-on-windows10
+- to add to Windows  
+[https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)  
+
 - Once installed, you have to configure it to create a key and set up
-your GitHub account to use the key
-https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+your GitHub account to use the key  
+[https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 
 # Typical Workflow
 1. Fork a repository of interest to your own Github account (creates a copy of this repo on your own account).
@@ -279,7 +280,7 @@ This will walk through the typical workflow above with two examples:
   - Git pages, project landing pages websites, etc.
 
 # Wrap-Up
-- please fill out our [post-webinar survey](https://docs.google.com/forms/d/e/1FAIpQLSeUf7iG_GZoxrKHkKrh6cqVs_baFSeNpm1jaBZV0kQZJcvQ7w/viewform?usp=sf_link)
+- please fill out our post-webinar survey (click on the url): [https://docs.google.com/forms/d/e/1FAIpQLSeUf7iG_GZoxrKHkKrh6cqVs_baFSeNpm1jaBZV0kQZJcvQ7w/viewform?usp=sf_link](https://docs.google.com/forms/d/e/1FAIpQLSeUf7iG_GZoxrKHkKrh6cqVs_baFSeNpm1jaBZV0kQZJcvQ7w/viewform?usp=sf_link)
 - support the CSHS-hydRology project as you can:
   - join our newsletter signup and monthly meetings
   - contribute function ideas, review code, tell your colleagues about this group
