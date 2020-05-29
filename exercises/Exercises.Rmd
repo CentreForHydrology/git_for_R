@@ -3,35 +3,43 @@ title: "Exercises for git and GitHub"
 output:
   pdf_document: default
 ---
-## Instructions
-Try the following exercises. First load and run the file
-`install_R_packages_gitwebinar.R` from the `/setup` folder,
-which will check that you have git installed on your system,
-and will download all of the required **R** packages.
-
 ## Exercises
-1. Go to GitHub and create an account
+1. Go to GitHub and create an account, if you have not yet done so.
+2. Run the file `install_R_packages_gitwebinar.R` from the `/setup` folder,
+which will check that you have git installed on your system, and will download all of the required **R** packages.
 
-2. Clone the presentation repository to your local computer. Using https, the
-address is `https://github.com/CentreForHydrology/git_for_R.git`. If you have ssh installed
-and configured, you can use the address `git@github.com:CentreForHydrology/git_for_R.git`.
+### git_for_r presentation
+3. Fork the GitHub repository `CentreForHydrology/git_for_R.git`
+to your account. 
 
-3. Delete the file `this_file_is_junk.txt` from the local repo. It
+Note that you could clone directly from `https://github.com/CentreForHydrology/git_for_R.git`, but it is better practice for collaboration to work from your own copy of the repo.
+
+4. Make a local copy of the presentation repository by checkout out your repo 
+(`https://github.com/<username>/git_for_r`).
+
+5. Delete the file `this_file_is_junk.txt` from the local repo. It
 is inside the `/exercises` folder.
 
-4. Commit the changes to your local repo.
+6. Make a change to the `README.md` file in the main folder, such as adding a fun note to this file.
 
-5. Fork the GitHub repository `CSHS-CWRA/CSHShydRology`
+7. Commit the changes to your local repo.
+
+8. Push the changes to your local repo. Check that the README.md page on your github repo online has been updated.
+
+9. At this stage, if you were happy with your changes, you might submit a pull request. This would 'request' the managers of the original repo to consider pulling your updates into their repo.
+
+### CSHS-hydRology package
+10. Fork the GitHub repository `CSHS-CWRA/CSHShydRology`
 to your account.
 
-6. Create a local version of the `CSHShydRology` package on your own computer by creating a new project. 
+11. Create a local version of the `CSHShydRology` package on your own computer by creating a new project in RStudio. 
 
-7. Build the package. Check to see that it builds properly. For more in-depth checking, use the **Check** command.
+12. Build the package. Check to see that it builds properly. For more in-depth checking, use the **Check** command.
 
-8. Create a branch called `testing` for the CSHShydRology repo on your computer (and on your fork on GitHub)
+13. Create a branch called `testing` for the CSHShydRology repo on your computer (and on your fork on GitHub)
 
-9. Copy the file `??` from the `/exercises` folder of the presentation repository, to the `/code` directory of the `testing` branch.
+14. Copy the file `??` from the `/exercises` folder of the presentation repository, to the `/code` directory of the `testing` branch.
 
-10. Commit the changes to the local repo and push the commit to GitHub.
+15. Commit the changes to the local repo and push the commit to GitHub.
 
-11. Check the `testing` branch. Does the package build properly? If not, change back to the `master` branch and build the package.
+16. Check the `testing` branch. Does the package build properly? If not, change back to the `master` branch and build the package.
