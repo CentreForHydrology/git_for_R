@@ -1,7 +1,9 @@
 
 
 ## install required packages for workshop ----
-pkgs <- c("rmarkdown","knitr","ggplot2","devtools")
+pkgs <- c("rmarkdown","knitr","ggplot2","devtools","testthat",
+          "fields","Kendall","lubridate","plotrix",
+          "timeDate","stringr","jsonlite","curl")
 install.packages(pkgs)
 
 

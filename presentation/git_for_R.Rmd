@@ -27,6 +27,11 @@ knitr::opts_chunk$set(echo = FALSE)
 knitr::include_graphics("figures/phd101212s.png")
 ```  
 
+# Purpose of this webinar...
+... is to get you comfortable *using* git and Github for your R projects, and enable you to collaborate on projects such as CSHS-hydRology.
+
+Is it *not* to make you an expert in version control software.
+
 # Version control programs
 - When you create R files (code, notebooks, documents), there
 are always changes
@@ -151,7 +156,7 @@ of your commits to the repository
 
 # Branches
 - git uses *branches* to organise your code/documents
-- Each repository always has a brance called **master**
+- Each repository always has a branch called **master**
   - most up-to-date, best version of the code 
 - Each branch is separate, and can be changed/deleted
 - The current branch is shown in the Git tab
@@ -191,6 +196,7 @@ mistakes
 
 - The GitHub/GitLab repository linked to your local repo
 is referred to as the "Remote"
+  - i.e. the repo that is online is the remote one, the repo on your desktop is local
 
 # Pulling
 
@@ -251,3 +257,30 @@ https://jcutrer.com/windows/install-openssh-on-windows10
 your GitHub account to use the key
 https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
 
+# Typical Workflow
+1. Fork a repository of interest to your own Github account (creates a copy of this repo on your own account).
+2. Checkout your version of this repo locally.
+3. Make updates/ changes/ new branches/ etc. on your local account. Preferably in a new branch.
+4. Merge/ push changes to the remote branch on your forked repo.
+5. Make a pull request to bring these changes from your repo back to the original.
+6. Celebrate in having made a contribution to another project!
+
+# Git and R Exercises
+This will walk through the typical workflow above with two examples:
+1. This presentation repository (CentreForHydrology/git_for_r)
+2. The CSHS-hydRology package (CSHS-CWRA/CSHShydRology)
+
+# Questions?
+
+# Wrap-Up
+- **lots** of resources online for git, github, and R support
+- many cool things that can be done with R, RStudio, and Git:
+  - presentations, papers, reports, webpages, animated htmls...
+  - Git pages, project landing pages websites, etc.
+
+# Wrap-Up
+- please fill out our [post-webinar survey](https://docs.google.com/forms/d/e/1FAIpQLSeUf7iG_GZoxrKHkKrh6cqVs_baFSeNpm1jaBZV0kQZJcvQ7w/viewform?usp=sf_link)
+- support the CSHS-hydRology project as you can:
+  - join our newsletter signup and monthly meetings
+  - contribute function ideas, review code, tell your colleagues about this group
+- stay tuned for free webinars on R and hydrology in the future
