@@ -1,25 +1,37 @@
 ---
-title: "Exercises for git/GitHub"
-output: html_notebook
+title: "Exercises for git and GitHub"
+output:
+  pdf_document: default
 ---
+## Instructions
+Try the following exercises. First load and run the file
+`install_R_packages_gitwebinar.R` from the `/setup` folder,
+which will check that you have git installed on your system,
+and will download all of the required **R** packages.
 
-Try the following exercises.
+## Exercises
+1. Go to GitHub and create an account
 
-1. Install git on your computer
-Linux
-On Debian-based Linux distros (Ubuntu, Mint) the command is  
-`sudo apt install git`
-On RedHat (CentOS, Fedora), it is
-`sudo yum install git`
-On Arch it is
-`sudo pacman -S git`
+2. Clone the presentation repository to your local computer. Using https, the
+address is `https://github.com/CentreForHydrology/git_for_R.git`. If you have ssh installed
+and configured, you can use the address `git@github.com:CentreForHydrology/git_for_R.git`.
 
-Windows
+3. Delete the file `this_file_is_junk.txt` from the local repo. It
+is inside the `/exercises` folder.
 
+4. Commit the changes to your local repo.
 
-2. Go to GitHub and create an account
+5. Fork the GitHub repository `CSHS-CWRA/CSHShydRology`
+to your account.
 
-3. Clone the presentation repository to your GitHub account
+6. Create a local version of the `CSHShydRology` package on your own computer by creating a new project. 
 
-4. Clone the presentation from **your** GitHub account to your local
-computer
+7. Build the package. Check to see that it builds properly. For more in-depth checking, use the **Check** command.
+
+8. Create a branch called `testing` for the CSHShydRology repo on your computer (and on your fork on GitHub)
+
+9. Copy the file `??` from the `/exercises` folder of the presentation repository, to the `/code` directory of the `testing` branch.
+
+10. Commit the changes to the local repo and push the commit to GitHub.
+
+11. Check the `testing` branch. Does the package build properly? If not, change back to the `master` branch and build the package.
