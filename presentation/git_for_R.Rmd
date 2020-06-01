@@ -1,6 +1,6 @@
 ---
 title: "Using Git and GitHub with R"
-author: "Kevin Shook and Rob Chlumsky"
+author: "Rob Chlumsky and Kevin Shook"
 date: "June 3, 2020"
 header-includes:  
 - \titlegraphic{\centering \includegraphics[width=5cm]{cshslogo2019.png}}
@@ -14,23 +14,58 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Outline
+# Canadian Society for Hydrological Sciences
+```{r, echo=FALSE,fig.height = 1, fig.width=2, fig.align = 'center'}
+knitr::include_graphics("figures/cshslogo2019.png", dpi=1200)
+``` 
+
+\begin{center}
+cshs.cwra.org
+\end{center}
+
+
+- Promote the science of hydrology and its sound application in effective water management
+- Courses (Kananaskis, Waterloo & Sacré-Coeur)
+- Modelling Tools (GreyJay and hydrology R package)
+- Webinars
+- Conferences
+- Awards and Scholarships
+
+# CSHShydRology 
+- R package of functions for Canadian hydrologists
+  [github.com/CSHS-CWRA/CSHShydRology](https://github.com/CSHS-CWRA/CSHShydRology)
+- Undergoing development, hoping to deploy on CRAN this fall
+- Many people interested in helping, but are having issues with git/GitHub
+- Please join us!
+
+# Purpose of this webinar...
+... is to get you comfortable *using* git and GitHub for your R projects, and enable you to collaborate on projects such as **CSHShydRology**.
+
+It is *not* to make you an expert in version control software.
+
+# Webinar components
+1. Introduction to git/GitHub (slides) - Kevin Shook
+2. Using git/GitHub (demonstration) - Rob Chlumsky
+3. Questions and wrap-up  
+
+All files are available at  
+[github.com/CentreForHydrology/git_for_R](https://github.com/CentreForHydrology/git_for_R)
+
+# 1. Introduction to git and GitHub
+
+Outline  
 
 - Version control
 - What are git and GitHub?
-- How to set up
+- How to set up git/GitHub
 - Using git in R
 - Working with GitHub
 
 ---
-```{r, echo=FALSE, fig.width=3}
-knitr::include_graphics("figures/phd101212s.png")
+```{r, echo=FALSE, fig.width=3, fig.align = 'center'}
+knitr::include_graphics("figures/phd101212s.png", )
 ```  
 
-# Purpose of this webinar...
-... is to get you comfortable *using* git and Github for your R projects, and enable you to collaborate on projects such as CSHS-hydRology.
-
-It is *not* to make you an expert in version control software.
 
 # Version control programs
 - When you create R files (code, notebooks, documents), there
@@ -47,7 +82,7 @@ of the files that you create.
 - Written by Linus Torvalds, creator of Linux
 - Free Open Source Software (FOSS)
 - *Distributed* version control
-  - doesn't require a centralised server like SVN
+  - doesn't require a centralized server like SVN
 
 # GitHub
 - Website running git
@@ -87,12 +122,13 @@ is automatically created
   - you will still have to type commands occasionally
 
 # Typing in commands
-- In Linux or Mac OS, you can type in git commands in any terminal, including
-the terminal tab in Rstudio  
-![](figures/git_tab.png)  
-- In Windows, you have to use the git shell, which is accessed through a 
+- You can use the git shell, which is accessed through a 
 drop-down menu  
-![](figures/git_shell.png)
+![](figures/git_shell.png)  
+- Or you can type in git commands in any terminal, including
+the terminal tab in Rstudio  
+![](figures/terminal_tab.png)  
+
 - git commands always begin with **git**
 
 # Configuring git
@@ -155,7 +191,7 @@ of your commits to the repository
 - Each commit is identified by a unique SHA number
 
 # Branches
-- git uses *branches* to organise your code/documents
+- git uses *branches* to organize your code/documents
 - Each repository always has a branch called **master**
   - most up-to-date, best version of the code 
 - Each branch is separate, and can be changed/deleted
@@ -189,8 +225,7 @@ There are *lots* of ways of screwing up your code!
 This is why it's a good idea to make a branch *before* making
 big changes to your project
 
-sethrobertson.github.io/GitFixUm shows how to recover from many different types of 
-mistakes
+[sethrobertson.github.io/GitFixUm](https://sethrobertson.github.io/GitFixUm) shows how to recover from many different types of mistakes
 
 # Working with GitHub
 
@@ -223,13 +258,13 @@ who can approve changes
 - If you aren't one of these people (and even if you are!), you
 shouldn't be pushing changes to the **master** branch directly.
 
-Bug reports (Issues)
-========================================================
+# Bug reports (Issues)
+
 - One of GitHub's most important features.
 - Very easy to submit an Issue  
 ![](figures/Issues.png)
 
-- Writing a *good* bug report is an art - see https://github.com/rstudio/rstudio/wiki/Writing-Good-Bug-Reports
+- Writing a *good* bug report is an art - see [github.com/rstudio/rstudio/wiki/Writing-Good-Bug-Reports](https://github.com/rstudio/rstudio/wiki/Writing-Good-Bug-Reports)
 
 # Forking
 - A *fork* is complete copy of a GitHub repo  
@@ -240,7 +275,7 @@ the original repo
 - When you are finished, you can then submit a Pull Request  
 
 # Pull requests
- - Pull requests are submitted throught GitHub
+ - Pull requests are submitted through GitHub
    - tell members of the project about your suggested changes
    - allows discussion
  - Files can then be merged with the specified branch
@@ -252,36 +287,36 @@ the original repo
 type in your user name and password every time
 - part of Linux and Mac OS
 - to add to Windows  
-[https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)  
+[docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)  
 
 - Once installed, you have to configure it to create a key and set up
 your GitHub account to use the key  
-[https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+[help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 
 # Typical Workflow
-1. Fork a repository of interest to your own Github account (creates a copy of this repo on your own account).
+1. Fork a repository of interest to your own GitHub account (creates a copy of this repo on your own account).
 2. Checkout your version of this repo locally.
 3. Make updates/ changes/ new branches/ etc. on your local account. Preferably in a new branch.
 4. Merge/ push changes to the remote branch on your forked repo.
 5. Make a pull request to bring these changes from your repo back to the original.
 6. Celebrate in having made a contribution to another project!
 
-# Git and R Exercises
-This will walk through the typical workflow above with two examples:
-1. This presentation repository (CentreForHydrology/git_for_r)
-2. The CSHS-hydRology package (CSHS-CWRA/CSHShydRology)
+# 2. Git and R Exercises
+This will walk through the typical workflow above with two examples:  
+1. This presentation repository (CentreForHydrology/git_for_r)  
+2. The CSHS-hydRology package (CSHS-CWRA/CSHShydRology)  
 
-# Questions?
+# 3. Questions?
 
 # Wrap-Up
-- **lots** of resources online for git, github, and R support
+- **lots** of resources online for git, GitHub, and R support
 - many cool things that can be done with R, RStudio, and Git:
-  - presentations, papers, reports, webpages, animated htmls...
+  - presentations, papers, reports, web pages, animated htmls...
   - Git pages, project landing pages websites, etc.
 
-# Wrap-Up
-- please fill out our post-webinar survey (click on the url): [https://docs.google.com/forms/d/e/1FAIpQLSeUf7iG_GZoxrKHkKrh6cqVs_baFSeNpm1jaBZV0kQZJcvQ7w/viewform?usp=sf_link](https://docs.google.com/forms/d/e/1FAIpQLSeUf7iG_GZoxrKHkKrh6cqVs_baFSeNpm1jaBZV0kQZJcvQ7w/viewform?usp=sf_link)
-- support the CSHS-hydRology project as you can:
+# Post webinar
+- please fill out our post-webinar survey (click on the url): [docs.google.com/forms/d/e/1FAIpQLSeUf7iG_GZoxrKHkKrh6cqVs_baFSeNpm1jaBZV0kQZJcvQ7w/viewform?usp=sf_link](https://docs.google.com/forms/d/e/1FAIpQLSeUf7iG_GZoxrKHkKrh6cqVs_baFSeNpm1jaBZV0kQZJcvQ7w/viewform?usp=sf_link)
+- support the **CSHShydRology** project, as you can:
   - join our newsletter signup and monthly meetings
   - contribute function ideas, review code, tell your colleagues about this group
 - stay tuned for free webinars on R and hydrology in the future
