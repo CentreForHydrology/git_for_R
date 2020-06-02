@@ -1,8 +1,8 @@
 ---
 title: "Exercises for git and GitHub"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 editor_options: 
   chunk_output_type: console
 ---
@@ -12,12 +12,11 @@ editor_options:
 which will check that you have git installed on your system, and will download all of the required **R** packages.
 
 ## git_for_r presentation
-3. Fork the GitHub repository `CentreForHydrology/git_for_R.git`
-to your account. 
+3. Fork the GitHub repository `CentreForHydrology/git_for_R.git` to your account. 
 
 Note that you could clone directly from `https://github.com/CentreForHydrology/git_for_R.git`, but it is better practice for collaboration to work from your own copy of the repo.
 
-4. Make a local copy of the presentation repository by cloining your repository.  
+4. Make a local copy of the presentation repository by cloning your repository.  
 (`https://github.com/<username>/git_for_r`).
 
 ```{r checkout_git_for_r, eval=FALSE, include=FALSE}
@@ -29,8 +28,7 @@ system(sprintf("git clone https://github.com/%s/git_for_R", username))
 setwd("git_for_R/")
 ```
 
-5. Delete the file `this_file_is_junk.txt` from the local repo. It
-is inside the `/exercises` folder.
+5. Delete the file `this_file_is_junk.txt` from the local repo. It is inside the `/exercises` folder.
 
 6. Make a change to the `README.md` file in the main folder, such as adding a fun note to this file.
 
@@ -60,8 +58,7 @@ system("git push origin master")
 9. At this stage, if you were happy with your changes, you might submit a pull request. This would 'request' the managers of the original repo to consider pulling your updates into their repo.
 
 ## CSHS-hydRology package
-10. Fork the GitHub repository `CSHS-CWRA/CSHShydRology`
-to your account.
+10. Fork the GitHub repository `CSHS-CWRA/CSHShydRology` to your account.
 
 11. Create a local version of the `CSHShydRology` package on your own computer by creating a new project in RStudio. 
 
