@@ -1,45 +1,105 @@
 ---
 title: "Exercises for git and GitHub"
 output:
+  html_document: default
   pdf_document: default
+editor_options: 
+  chunk_output_type: console
 ---
-## Exercises
+# Exercises
 1. Go to GitHub and create an account, if you have not yet done so.
 2. Run the file `install_R_packages_gitwebinar.R` from the `/setup` folder,
 which will check that you have git installed on your system, and will download all of the required **R** packages.
 
-### git_for_r presentation
+## git_for_r presentation
 3. Fork the GitHub repository `CentreForHydrology/git_for_R.git`
 to your account. 
 
 Note that you could clone directly from `https://github.com/CentreForHydrology/git_for_R.git`, but it is better practice for collaboration to work from your own copy of the repo.
 
-4. Make a local copy of the presentation repository by checkout out your repo 
+4. Make a local copy of the presentation repository by cloining your repository.  
 (`https://github.com/<username>/git_for_r`).
+
+```{r checkout_git_for_r, eval=FALSE, include=FALSE}
+username <- "rchlumsk" # github username
+useremail <- "rchlumsk@gmail.com"
+
+setwd("C:/Users/rober/Documents/GitHub/")
+system(sprintf("git clone https://github.com/%s/git_for_R", username))
+setwd("git_for_R/")
+```
 
 5. Delete the file `this_file_is_junk.txt` from the local repo. It
 is inside the `/exercises` folder.
 
 6. Make a change to the `README.md` file in the main folder, such as adding a fun note to this file.
 
-7. Commit the changes to your local repo.
+7. Commit the changes to your local repo; be sure to stage the changes first.
+
+```{r commit_git_for_r, eval=FALSE, include=FALSE}
+# check the status
+system("git status")
+
+# add the unstaged changes (add all changes)
+system("git add -A")
+
+## configure username if needed
+system(sprintf("git config --global user.name %s", username))
+system(sprintf("git config --global user.email %s", useremail))
+
+# commit the changes
+system("git commit -m \"removed exercises/this_file_is_junk.txt, updated README.md document\"")
+```
 
 8. Push the changes to your local repo. Check that the README.md page on your github repo online has been updated.
 
+```{r push_git_for_r, eval=FALSE, include=FALSE}
+system("git push origin master")
+```
+
 9. At this stage, if you were happy with your changes, you might submit a pull request. This would 'request' the managers of the original repo to consider pulling your updates into their repo.
 
-### CSHS-hydRology package
+## CSHS-hydRology package
 10. Fork the GitHub repository `CSHS-CWRA/CSHShydRology`
 to your account.
 
 11. Create a local version of the `CSHShydRology` package on your own computer by creating a new project in RStudio. 
 
+```{r checkout_hydRology, eval=FALSE, include=FALSE}
+username <- "rchlumsk" # github username
+useremail <- "rchlumsk@gmail.com"
+
+setwd("C:/Users/rober/Documents/GitHub/")
+system(sprintf("git clone https://github.com/%s/CSHShydRology", username))
+setwd("CSHShydRology/")
+```
+
 12. Build the package. Check to see that it builds properly. For more in-depth checking, use the **Check** command.
 
-13. Create a branch called `testing` for the CSHShydRology repo on your computer (and on your fork on GitHub)
+13. Create a branch called `testing` for the CSHShydRology repo on your computer. You may need to revert changes made to files before switching or creating branches.
 
-14. Copy the file `??` from the `/exercises` folder of the presentation repository, to the `/code` directory of the `testing` branch.
+14. Create a file in the /R folder called "this_is_junk.txt" with a fun message.
 
-15. Commit the changes to the local repo and push the commit to GitHub.
+15. Commit the changes to the local repo and push the commit to GitHub. Do this without building the package for now (noting that this is in line with bad practices).
 
-16. Check the `testing` branch. Does the package build properly? If not, change back to the `master` branch and build the package.
+```{r commit_and_push_hydRology, eval=FALSE, include=FALSE}
+# check the status
+system("git status")
+
+# add the unstaged changes (add all changes)
+system("git add -A")
+
+## configure username if needed
+system(sprintf("git config --global user.name %s", username))
+system(sprintf("git config --global user.email %s", useremail))
+
+# commit the changes
+system("git commit -m \"added junk file to R folder\"")
+
+# push the changes
+system("git push origin testing")
+```
+
+16. Check the `testing` branch. Does the package build properly? Change the junk file so that the testing branch will build.
+
+17. Change back to the `DanMoore_spatial` branch and note the differences in files in the /R folder.
