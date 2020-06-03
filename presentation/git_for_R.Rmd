@@ -100,17 +100,8 @@ your your project, the working directory
 - This is the repository
   - It contains all versions, current and old, of your files
 - When you make changes to the files, you add them to the repository
-- You can retrieve old versions of the files into the working
+- You can retrieve old/different versions of the files into the working
 directory
-
-# git and Rstudio
-- When you clone a repository from GitHub through GitHub, a local repository
-is automatically created 
-
-```{r, echo=FALSE, fig.height = 1, fig.width=2}
- knitr::include_graphics("figures/clone_repository.png") 
-```
-- When you manually create a project in Rstudio, you can also add a repository  
 
 
 # Working with git
@@ -120,6 +111,21 @@ is automatically created
   - uses Git tab in top-right  
 ![](figures/git_tab.png)  
   - you will still have to type commands occasionally
+
+# git and Rstudio
+
+- When you create a new project in Rstudio, you can add a repository
+  - you can also add a repository to an existing project
+- When you clone a repository from GitHub through RStudio, a local repository
+is automatically created 
+
+```{r, echo=FALSE, fig.height = 2, fig.width=3, align = "center"}
+ knitr::include_graphics("figures/clone_repository.png", dpi=300) 
+```
+
+  
+
+
 
 # Typing in commands
 - You can use the git shell, which is accessed through a 
@@ -163,10 +169,10 @@ The Git tab shows all of the files which can be staged
 ![](figures/staging.png)
 
 # Committing  
-Select the files to be added  
 
-  - the icons of the new files will change)
-  - and click on the commit icon
+1. Stage the files by clicking the check boxes beside the files to be added  
+  (the icons of the new files will change)
+2.  click on the commit icon
   
 - The commit window will pop-up, giving you a chance
 to review the files before committing
@@ -236,7 +242,10 @@ is referred to as the "Remote"
 # Pulling
 
 - Pulling downloads the GitHub repo to your local repo
-- It's a good idea to click on Pull to make sure that
+
+![](figures/git_tab.png) 
+
+- It's a good idea to click on **Pull** to make sure that
 the local repo is up to date before doing any new work
 
 ![](figures/pull.png)
@@ -245,7 +254,10 @@ the local repo is up to date before doing any new work
 # Pushing
 
 - Pushing uploads your local repository to GitHub 
-  - You should only push to your *own* GitHub repository
+
+![](figures/git_tab.png) 
+
+- You should only push to your *own* GitHub repository
 
 ![](figures/push.png)
 
@@ -282,10 +294,10 @@ the original repo
 
 # ssh
 - ssh is short for "secure shell"
-- provides secure, encrypted communication between 2 computers
-- if you set it up on your computer, you can avoid having to
-type in your user name and password every time
-- part of Linux and Mac OS
+- Provides secure, encrypted communication between 2 computers
+- If you set it up on your computer, you can avoid having to
+type in your user name and password every time you push to GitHub
+- Part of Linux and Mac OS
 - to add to Windows  
 [docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)  
 
